@@ -20,4 +20,13 @@ sequelize
     console.error('Unable to connect to the database:', err);
   });
 
+  sequelize
+  .sync({ alter: true }) // `alter: true` will modify the existing tables to match your models if needed
+  .then(() => {
+    console.log('All models were synchronized successfully.');
+  })
+  .catch((error) => {
+    console.error('Error synchronizing models:', error);
+  });
+
 module.exports = sequelize;
