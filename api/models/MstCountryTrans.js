@@ -27,7 +27,7 @@ const MstCountryTrans = sequelize.define(
         model: MstCountry,
         key: "id"
       },
-      allowNull: false
+      allowNull: false,
     },
     isActive: {
       type: DataTypes.BOOLEAN,

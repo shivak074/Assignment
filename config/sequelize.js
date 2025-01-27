@@ -21,12 +21,12 @@ sequelize
   });
 
   sequelize
-  .sync({ alter: true }) // `alter: true` will modify the existing tables to match your models if needed
+  .sync({ force: false })
   .then(() => {
-    console.log('All models were synchronized successfully.');
+    console.log("Database synchronized successfully!")
   })
   .catch((error) => {
-    console.error('Error synchronizing models:', error);
-  });
+    console.error("Error during synchronization:", error.message,error)
+  })
 
 module.exports = sequelize;

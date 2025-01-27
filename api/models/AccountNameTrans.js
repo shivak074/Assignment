@@ -1,80 +1,80 @@
-const { DataTypes } = require("sequelize")
-const sequelize = require("../../config/sequelize")
-const Category = require("./Category")
+const { DataTypes } = require("sequelize");
+const sequelize = require("../../config/sequelize");
+const Account = require("./Account");
 
-const CategoryTrans = sequelize.define(
-  "CategoryTrans",
+const AccountNameTrans = sequelize.define(
+  "AccountNameTrans",
   {
     id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4,
-      allowNull: false
+      allowNull: false,
     },
     name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     lang: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
-    categoryId: {
+    accountId: {
       type: DataTypes.UUID,
-      field: "category_id",
+      field: "account_id",
       allowNull: false,
       references: {
-        model: Category,
-        key: "id"
-      }
+        model: Account,
+        key: "id",
+      },
     },
     isActive: {
       type: DataTypes.BOOLEAN,
       field: "is_active",
-      defaultValue: true
+      defaultValue: true,
     },
     createdAt: {
       type: DataTypes.BIGINT,
       field: "created_at",
       allowNull: false,
-      defaultValue: Math.floor(Date.now() / 1000)
+      defaultValue: Math.floor(Date.now() / 1000),
     },
     createdBy: {
       type: DataTypes.UUID,
       field: "created_by",
-      allowNull: true
+      allowNull: true,
     },
     updatedAt: {
       type: DataTypes.BIGINT,
       field: "updated_at",
-      allowNull: true
+      allowNull: true,
     },
     updatedBy: {
       type: DataTypes.UUID,
       field: "updated_by",
-      allowNull: true
+      allowNull: true,
     },
     isDeleted: {
       type: DataTypes.BOOLEAN,
       field: "is_deleted",
-      defaultValue: false
+      defaultValue: false,
     },
     deletedBy: {
       type: DataTypes.UUID,
       field: "deleted_by",
-      allowNull: true
+      allowNull: true,
     },
     deletedAt: {
       type: DataTypes.BIGINT,
       field: "deleted_at",
-      allowNull: true
-    }
+      allowNull: true,
+    },
   },
   {
-    tableName: "category_trans",
+    tableName: "account_name_trans",
     freezeTableName: true,
-    timestamps: false
+    timestamps: false,
   }
-)
+);
 
-module.exports = CategoryTrans
+module.exports = AccountNameTrans;

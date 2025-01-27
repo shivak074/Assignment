@@ -1,0 +1,31 @@
+There will be two login
+One is admin and second is user.
+Languages are English and german.
+Password should be between 8-16 characters with at least one capital letter, 1 number and 1 special character.
+Email should be unique admin and user wise.
+
+Admin
+
+Admin can manage countries and cities with both languages but can’t delete that.
+
+Admin can create categories and subcategories.
+Both should be unique case insensitively.
+There will be a single api for the listing of category and subcategory  with search on category name.
+In delete api there should be validation if that category or subcategory is assigned to any account.
+There will be a listing of users with filters (city, country) and search on email and name. (only one search box) along with number of accounts.
+
+
+User
+
+User can signup and login.
+Signup there will be fields of name. Email, password, country, city, company name
+Name should have max 30 characters.
+Email should be as email format.
+Company name field is optional and can have max 64 characters.
+Password should be encrypted in db
+
+User can edit profile but can’t change email.
+
+User can manage accounts
+Account have fields like name in both languages, category, subcategory, description
+Description is optional but can have max 100 characters.

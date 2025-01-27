@@ -1,67 +1,44 @@
 {
-	"User": {
-	  "Auth": {
-		"USER_CREATION_FAILED": "Failed to create user",
-		"INVALID_EMAIL_FORMAT": "Invalid email format",
-		"INVALID_PASSWORD_FORMAT": "Invalid password format",
-		"INVALID_CREDENTIALS": "Invalid email or password",
-		"LOGIN_REQUIRED": "Please login to access this route",
-		"USER_NOT_FOUND": "User no longer exists",
-		"FIRST_NAME_REQUIRED": "First name is required",
-		"LAST_NAME_REQUIRED": "Last name is required",
-		"PASSWORD_TOO_SHORT": "Password must be at least 8 characters long",
-		"PASSWORDS_MISMATCH": "Password and confirm password must match",
-		"INVALID_USER_TYPE": "Invalid user type",
-		"INVALID_TOKEN": "Invalid token. Please login again",
-		"USER_CREATED": "User created successfully",
-		"LOGIN_SUCCESS": "Login successful"
-	  }
-	},
 	"Admin": {
-	  "Auth": {
-		"PERMISSION_DENIED": "You do not have permission to perform this action",
-		"ADMIN_CREATION_FAILED": "Failed to create admin",
-		"ADMIN_ALREADY_EXISTS": "Admin already exists",
-		"ADMIN_CREATED_SUCCESSFULLY": "Admin created successfully",
-		"ADMIN_UPDATED_SUCCESSFULLY": "Admin updated successfully",
-		"ADMIN_DELETED_SUCCESSFULLY": "Admin deleted successfully",
-		"LOGIN_SUCCESS": "Admin LOGIN SUCCESSFULLY "
-	  }
-	},
-	"Category": {
-	  "CATEGORY_NOT_FOUND": "No categories found",
-	  "CATEGORY_CREATED": "Category created successfully",
-	  "CATEGORY_UPDATED": "Category updated successfully",
-	  "CATEGORY_DELETED": "Category deleted successfully",
-	  "CATEGORY_NAME_REQUIRED": "Category name is required",
-	  "CATEGORY_TRANSLATIONS_REQUIRED": "Translations for category are required"
-	},
-	"Country": {
-	  "COUNTRY_NOT_FOUND": "No countries found",
-	  "COUNTRY_CREATED": "Country created successfully",
-	  "COUNTRY_UPDATED": "Country updated successfully",
-	  "COUNTRY_DELETED": "Country deleted successfully",
-	  "COUNTRY_NAME_REQUIRED": "Country name is required",
-	  "COUNTRY_TRANSLATIONS_REQUIRED": "Translations for country are required"
-	},
-	"City": {
-	  "CITY_NOT_FOUND": "No cities found",
-	  "CITY_CREATED": "City created successfully",
-	  "CITY_UPDATED": "City updated successfully",
-	  "CITY_DELETED": "City deleted successfully"
-	},
-	"General": {
-	  "ROUTE_NOT_FOUND": "Cannot find ${req.originalUrl} on this server",
-	  "INTERNAL_ERROR": "Internal server error",
-	  "NO_RESOURCES_FOUND": "No resources found",
-	  "RESOURCE_NOT_FOUND": "Resource not found"
+		"Auth": {
+			"ADMIN_ALREADY_EXISTS": "Admin.Auth.ADMIN_ALREADY_EXISTS",
+			"ADMIN_CREATED": "Admin.Auth.ADMIN_CREATED"
+		}
 	},
 	"messages": {
-	  "INTERNAL_ERROR": "messages.INTERNAL_ERROR",
-	  "USER_CREATED": "messages.USER_CREATED",
-	  "INVALID_INPUT": "messages.INVALID_INPUT",
-	  "EMAIL_ALREADY_EXISTS": "messages.EMAIL_ALREADY_EXISTS",
-	  "LOGIN_SUCCESS": "messages.LOGIN_SUCCESS"
+		"SERVER_ERROR": "messages.SERVER_ERROR",
+		"INVALID_CREDENTIALS": "messages.INVALID_CREDENTIALS",
+		"NO_AUTH_HEADER": "messages.NO_AUTH_HEADER",
+		"INVALID_TOKEN": "messages.INVALID_TOKEN",
+		"INVALID_INPUT": "messages.INVALID_INPUT",
+		"INTERNAL_ERROR": "messages.INTERNAL_ERROR"
+	},
+	"User": {
+		"Auth": {
+			"USER_CREATED": "User.Auth.USER_CREATED",
+			"LOGIN_SUCCESS": "User.Auth.LOGIN_SUCCESS",
+			"PROFILE_UPDATED": "User.Auth.PROFILE_UPDATED"
+		}
+	},
+	"Category": {
+		"CATEGORY_CREATED": "Category.CATEGORY_CREATED",
+		"CATEGORIES_FETCHED": "Category.CATEGORIES_FETCHED",
+		"CATEGORY_NOT_FOUND": "Category.CATEGORY_NOT_FOUND",
+		"CATEGORY_ASSIGNED_TO_ACCOUNT": "Category.CATEGORY_ASSIGNED_TO_ACCOUNT"
+	},
+	"SubCategory": {
+		"SUBCATEGORIES_NOT_FOUND": "SubCategory.SUBCATEGORIES_NOT_FOUND",
+		"SUBCATEGORY_CREATED": "SubCategory.SUBCATEGORY_CREATED",
+		"SUBCATEGORIES_FETCHED": "SubCategory.SUBCATEGORIES_FETCHED",
+		"SUBCATEGORY_TRANSLATIONS_EXISTS": "SubCategory.SUBCATEGORY_TRANSLATIONS_EXISTS",
+		"SUBCATEGORY_DELETED": "SubCategory.SUBCATEGORY_DELETED"
+	},
+	"Account": {
+		"ACCOUNT_CREATED": "Account.ACCOUNT_CREATED",
+		"ACCOUNT_NOT_FOUND": "Account.ACCOUNT_NOT_FOUND",
+		"ACCOUNTS_FETCHED": "Account.ACCOUNTS_FETCHED",
+		"ACCOUNT_FETCHED": "Account.ACCOUNT_FETCHED",
+		"ACCOUNT_UPDATED": "Account.ACCOUNT_UPDATED",
+		"ACCOUNT_DELETED": "Account.ACCOUNT_DELETED"
 	}
-  }
-  
+}
